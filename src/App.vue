@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <greeting />
+    <random-generator />
+    <email-validation />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Greeting: () => import("./components/Greeting"),
+    RandomGenerator: () => import("./components/RandomGenerator"),
+    EmailValidation: () => import("./components/EmailValidation"),
   },
 };
 </script>
