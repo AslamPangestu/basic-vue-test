@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <greeting />
+    <!-- <greeting />
     <random-generator />
-    <email-validation />
+    <email-validation /> -->
+    <counter />
   </div>
 </template>
 
@@ -10,9 +11,10 @@
 export default {
   name: "App",
   components: {
-    Greeting: () => import("./components/Greeting"),
-    RandomGenerator: () => import("./components/RandomGenerator"),
-    EmailValidation: () => import("./components/EmailValidation"),
+    // Greeting: () => import("./components/Greeting"),
+    // RandomGenerator: () => import("./components/RandomGenerator"),
+    // EmailValidation: () => import("./components/EmailValidation"),
+    Counter: () => import("./components/Counter"),
   },
 };
 </script>
